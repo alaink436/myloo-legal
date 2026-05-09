@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MyLoo</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    :root {
+      --bg: #FAFAFE;
+      --surface: #ffffff;
+      --text: #0F172A;
+      --text-secondary: #475569;
+      --text-tertiary: #94A3B8;
+      --accent: #6366F1;
+      --accent-dark: #4338CA;
+      --accent-deep: #312E81;
+      --border: #E2E8F0;
+      --code-bg: #F1F5F9;
+      --serif: 'Instrument Serif', 'Times New Roman', serif;
+      --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0f;
+        --surface: rgba(255,255,255,0.04);
+        --text: #F1F5F9;
+        --text-secondary: #94A3B8;
+        --text-tertiary: #64748B;
+        --border: rgba(255,255,255,0.08);
+        --code-bg: rgba(255,255,255,0.06);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--text); font-family: var(--sans); -webkit-font-smoothing: antialiased; line-height: 1.65; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .hero { text-align: center; margin-bottom: 32px; }
+    .mascot-wrap { width: 140px; height: 140px; margin: 0 auto 4px; position: relative; display: flex; align-items: center; justify-content: center; }
+    .mascot-glow { position: absolute; width: 70%; height: 70%; border-radius: 50%; background: radial-gradient(circle, rgba(99,102,241,0.45) 0%, rgba(99,102,241,0) 65%); filter: blur(8px); }
+    .mascot { position: relative; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 12px 18px rgba(15,23,42,0.18)); animation: float 4.5s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+
+    h1 { font-family: var(--serif); font-size: 56px; font-weight: 400; line-height: 1; letter-spacing: -1.5px; color: var(--text); margin-bottom: 8px; padding-top: 4px; }
+    h1 .accent { font-style: italic; color: var(--accent); }
+    .subtitle { font-family: var(--mono); font-size: 12px; color: var(--text-tertiary); letter-spacing: 0.5px; margin-bottom: 28px; }
+
+    .lang-toggle { display: inline-flex; gap: 6px; margin: 0 auto 36px; padding: 4px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); }
+    .lang-toggle button { padding: 8px 16px; border-radius: 8px; border: none; background: transparent; cursor: pointer; font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--text-secondary); transition: all 0.15s; }
+    .lang-toggle button.active { background: var(--accent); color: #fff; }
+
+    h2 { font-family: var(--serif); font-size: 26px; font-weight: 400; line-height: 1.2; letter-spacing: -0.5px; color: var(--text); margin-top: 36px; margin-bottom: 12px; }
+    h2::before { content: counter(s, decimal-leading-zero); counter-increment: s; font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; color: var(--accent); display: block; margin-bottom: 4px; font-weight: 500; text-transform: none; }
+    .section { counter-reset: s; }
+    p, li { font-family: var(--sans); font-size: 15px; color: var(--text-secondary); margin-bottom: 12px; }
+    ul { padding-left: 22px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); font-weight: 600; }
+    code { font-family: var(--mono); font-size: 13px; background: var(--code-bg); padding: 1px 6px; border-radius: 4px; color: var(--text); }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: var(--accent); }
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+    .home-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px; font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--text-tertiary); text-transform: uppercase; text-decoration: none; }
+    .home-link:hover { color: var(--accent); }
+
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); font-family: var(--mono); font-size: 11px; color: var(--text-tertiary); letter-spacing: 0.5px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="home-link">← MyLoo</a>
+
+    <div class="hero">
+      <div class="mascot-wrap">
+        <div class="mascot-glow"></div>
+        <img class="mascot" src="mascots/shy.png" alt="" aria-hidden="true">
+      </div>
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Real privacy,<br><span class="accent">not promises.</span></h1>
+      <p class="subtitle">Last updated · May 2026</p>
+
+      <div class="lang-toggle">
+        <button class="active" onclick="switchLang(event, 'en')">English</button>
+        <button onclick="switchLang(event, 'de')">Deutsch</button>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="en" class="section active">
+      <h2>Introduction</h2>
+      <p>MyLoo ("we", "us", "our") operates the MyLoo mobile application — a personal digestive-health tracker. This Privacy Policy explains what data we collect, how we use it, and how we protect it. MyLoo handles sensitive health data and we treat it accordingly.</p>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> email address and authentication credentials (or Apple ID via Sign in with Apple).</li>
+        <li><strong>Entry data:</strong> Bristol type, color, symptoms, optional notes, timestamp.</li>
+        <li><strong>AI vision fields</strong> (only when you take a photo): volume, texture, moisture, color uniformity, undigested particles. These are derived from the photo, not the photo itself.</li>
+        <li><strong>Onboarding selections:</strong> tracking reasons (Curious / Medical mode) for personalisation.</li>
+        <li><strong>Device data:</strong> push notification token (only if you enable reminders).</li>
+        <li><strong>Subscription state:</strong> entitlement (free / premium), managed via RevenueCat.</li>
+      </ul>
+
+      <h2>Photos: device only</h2>
+      <p>Photos are stored exclusively in the app sandbox at <code>App/Documents/photos/</code> on your own device and are <strong>never uploaded to our servers</strong>. iOS and Android encrypt the app sandbox automatically with your device passcode. You can delete all photos at any time in Settings.</p>
+
+      <h2>AI classification: pass-through, not stored</h2>
+      <p>When you classify a photo, it is sent <strong>once</strong> to <strong>Anthropic (Claude AI Vision, US servers)</strong> for analysis. The AI extracts the Bristol type, color, and the five vision fields listed above. According to Anthropic's published policy, the photo is <strong>not retained</strong> and <strong>not used for AI training</strong>. We do not store the photo server-side either — only the extracted fields land in your account.</p>
+
+      <h2>Account data in the EU</h2>
+      <p>All entry data is encrypted on <strong>Supabase</strong> servers in the European Union (eu-central-1, Frankfurt). Row-Level-Security ensures only your account can access your entries. We use TLS/SSL in transit and AES-256 at rest.</p>
+
+      <h2>Health data (GDPR Art. 9)</h2>
+      <p>Stool tracking is <strong>special-category personal data</strong> ("data concerning health") under GDPR Art. 9. We process it on the legal basis of your <strong>explicit consent</strong>, which you give during onboarding. You can withdraw consent any time by deleting your account in Settings.</p>
+
+      <h2>Third parties</h2>
+      <ul>
+        <li><strong>Supabase</strong> — database, authentication, storage (EU/Frankfurt).</li>
+        <li><strong>Anthropic (Claude AI)</strong> — one-time image analysis. No storage, no AI training.</li>
+        <li><strong>RevenueCat</strong> — subscription state for App-Store-mediated purchases.</li>
+        <li><strong>Apple Push Notification Service / Firebase Cloud Messaging</strong> — push notifications (token-based, no content).</li>
+        <li><strong>Apple (Sign in with Apple)</strong> — authentication only, when you choose this method.</li>
+      </ul>
+      <p>We do <strong>not</strong> sell, rent, or share your personal data with advertisers, data brokers, or any third party not listed above.</p>
+
+      <h2>Your rights (GDPR)</h2>
+      <ul>
+        <li>Access your personal data</li>
+        <li>Correct inaccurate data</li>
+        <li>Delete your account and all data (in-app: Settings → Account → Delete account)</li>
+        <li>Export your data (Doctor PDF report covers entries)</li>
+        <li>Withdraw consent any time</li>
+      </ul>
+      <p>Contact: <a href="mailto:support@myloo.app">support@myloo.app</a></p>
+
+      <h2>Data retention</h2>
+      <p>Data is kept while your account is active. On account deletion, all personal data is irreversibly removed within 30 days — account, entries, photo path references, push tokens.</p>
+
+      <h2>Children's privacy</h2>
+      <p>MyLoo is not intended for children under 16. We do not knowingly collect data from children under 16.</p>
+
+      <h2>Not a medical device</h2>
+      <p>MyLoo is a tracking and educational tool, not a medical device. Tips, scores, and AI classifications are general gut-health guidance, not individual medical advice or diagnosis. For persistent symptoms or uncertainty, please consult a healthcare professional.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this Privacy Policy. Significant changes will be communicated via in-app notification or email. The "Last updated" date above reflects the current version.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this Privacy Policy: <a href="mailto:support@myloo.app">support@myloo.app</a></p>
+    </div>
+
+    <!-- DEUTSCH -->
+    <div id="de" class="section">
+      <h2>Einleitung</h2>
+      <p>MyLoo („wir", „uns", „unser") betreibt die mobile App MyLoo — einen persönlichen Verdauungs-Tracker. Diese Datenschutzerklärung erläutert, welche Daten wir erheben, wie wir sie verwenden und schützen. MyLoo verarbeitet sensible Gesundheitsdaten und behandelt sie entsprechend.</p>
+
+      <h2>Welche Daten wir erheben</h2>
+      <ul>
+        <li><strong>Kontodaten:</strong> E-Mail-Adresse und Authentifizierungsdaten (oder Apple-ID via Sign in with Apple).</li>
+        <li><strong>Eintrag-Daten:</strong> Bristol-Typ, Farbe, Symptome, optionale Notizen, Zeitstempel.</li>
+        <li><strong>KI-Vision-Felder</strong> (nur bei Foto-Eintrag): Volumen, Textur, Feuchtigkeit, Farb-Einheitlichkeit, unverdaute Reste. Abgeleitet aus dem Foto, nicht das Foto selbst.</li>
+        <li><strong>Onboarding-Auswahl:</strong> Tracking-Gründe (Curious / Medical) zur Personalisierung.</li>
+        <li><strong>Geräteinformationen:</strong> Push-Token (nur bei aktivierten Erinnerungen).</li>
+        <li><strong>Abo-Status:</strong> Entitlement (Free / Premium), verwaltet via RevenueCat.</li>
+      </ul>
+
+      <h2>Fotos: nur auf deinem Gerät</h2>
+      <p>Fotos werden ausschliesslich im App-Sandbox unter <code>App/Documents/photos/</code> auf deinem Gerät gespeichert und <strong>nie auf unsere Server hochgeladen</strong>. iOS und Android verschlüsseln den App-Sandbox automatisch mit deinem Geräte-Passcode. Du kannst alle Fotos jederzeit in den Einstellungen löschen.</p>
+
+      <h2>KI-Klassifikation: durchgereicht, nicht gespeichert</h2>
+      <p>Wenn du ein Foto klassifizierst, wird es <strong>einmalig</strong> an <strong>Anthropic (Claude AI Vision, US-Server)</strong> zur Analyse gesendet. Die KI extrahiert Bristol-Typ, Farbe und die fünf Vision-Felder. Laut Anthropic-Policy wird das Foto <strong>nicht gespeichert</strong> und <strong>nicht für KI-Training</strong> verwendet. Wir speichern das Foto ebenfalls nicht serverseitig — nur die extrahierten Felder landen in deinem Account.</p>
+
+      <h2>Kontodaten in der EU</h2>
+      <p>Alle Eintrag-Daten liegen verschlüsselt auf <strong>Supabase</strong>-Servern in der Europäischen Union (eu-central-1, Frankfurt). Row-Level-Security stellt sicher, dass nur dein Account auf deine Einträge zugreifen kann. TLS/SSL für Übertragung, AES-256 im Ruhezustand.</p>
+
+      <h2>Gesundheitsdaten (DSGVO Art. 9)</h2>
+      <p>Stuhl-Tracking sind <strong>sensible personenbezogene Daten</strong> („Gesundheitsdaten") nach DSGVO Art. 9. Verarbeitung erfolgt auf Basis deiner <strong>ausdrücklichen Einwilligung</strong> beim Onboarding. Du kannst die Einwilligung jederzeit durch Konto-Löschung in den Einstellungen widerrufen.</p>
+
+      <h2>Drittanbieter</h2>
+      <ul>
+        <li><strong>Supabase</strong> — Datenbank, Auth, Storage (EU/Frankfurt).</li>
+        <li><strong>Anthropic (Claude AI)</strong> — einmalige Bild-Analyse. Kein Storage, kein KI-Training.</li>
+        <li><strong>RevenueCat</strong> — Abo-Status für App-Store-vermittelte Käufe.</li>
+        <li><strong>Apple Push Notification Service / Firebase Cloud Messaging</strong> — Push-Notifications (Token-basiert, keine Inhalte).</li>
+        <li><strong>Apple (Sign in with Apple)</strong> — Authentifizierung, falls du diese Methode wählst.</li>
+      </ul>
+      <p>Wir verkaufen, vermieten oder teilen deine Daten <strong>nicht</strong> mit Werbetreibenden, Datenhändlern oder anderen nicht oben genannten Dritten.</p>
+
+      <h2>Deine Rechte (DSGVO)</h2>
+      <ul>
+        <li>Auskunft über deine Daten</li>
+        <li>Berichtigung unrichtiger Daten</li>
+        <li>Löschung deines Kontos und aller Daten (in-app: Einstellungen → Konto → Konto löschen)</li>
+        <li>Datenexport (Arzt-PDF-Bericht enthält Einträge)</li>
+        <li>Widerruf der Einwilligung jederzeit</li>
+      </ul>
+      <p>Kontakt: <a href="mailto:support@myloo.app">support@myloo.app</a></p>
+
+      <h2>Datenaufbewahrung</h2>
+      <p>Daten bleiben gespeichert, solange dein Konto aktiv ist. Bei Konto-Löschung werden alle persönlichen Daten innerhalb von 30 Tagen unwiderruflich entfernt — Konto, Einträge, Foto-Pfad-Referenzen, Push-Tokens.</p>
+
+      <h2>Datenschutz von Kindern</h2>
+      <p>MyLoo ist nicht für Kinder unter 16 Jahren bestimmt. Wir erheben wissentlich keine Daten von Kindern unter 16.</p>
+
+      <h2>Kein Medizinprodukt</h2>
+      <p>MyLoo ist ein Tracking- und Bildungstool, kein Medizinprodukt. Tipps, Scores und KI-Klassifikationen sind allgemeine Hinweise zur Darmgesundheit, keine individuelle medizinische Beratung oder Diagnose. Bei anhaltenden Symptomen oder Unsicherheit konsultiere bitte eine Ärztin oder einen Arzt.</p>
+
+      <h2>Änderungen</h2>
+      <p>Wir können diese Datenschutzerklärung aktualisieren. Wesentliche Änderungen kommunizieren wir via In-App-Notification oder E-Mail. Das „Stand"-Datum oben spiegelt die aktuelle Version.</p>
+
+      <h2>Kontakt</h2>
+      <p>Fragen zu dieser Datenschutzerklärung: <a href="mailto:support@myloo.app">support@myloo.app</a></p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 MyLoo · <a href="mailto:support@myloo.app" style="color: inherit;">support@myloo.app</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(ev, lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      ev.currentTarget.classList.add('active');
+      // Reset section counter so DE numbering also starts at 01
+      document.querySelectorAll('.section.active').forEach(el => { el.style.counterReset = 's'; });
+    }
+  </script>
+</body>
+</html>
